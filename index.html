@@ -57,8 +57,8 @@
 
     <body onLoad="startCount();">
 
-        <script>
-            // Disable right-click
+        <!-- <script>
+
             document.addEventListener('contextmenu', (e) => e.preventDefault());
 
             function ctrlShiftKey(e, keyCode) {
@@ -66,7 +66,7 @@
             }
 
             document.onkeydown = (e) => {
-                // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+
                 if (
                     event.keyCode === 123 ||
                     ctrlShiftKey(e, 'I') ||
@@ -76,7 +76,7 @@
                 )
                     return false;
             };
-        </script>
+        </script> -->
 
 
         <div class="wrapper"></div>
@@ -118,7 +118,6 @@
                                 <select>
                                     <option value="2">Android</option>
                                     <option value="3">iPhone</option>
-                                    <option value="3">PC</option>
                                 </select>
                             </div>
                         </div>
@@ -136,9 +135,9 @@
                                 Required</label><br>
                         </div>
 
-                        <div class="input-field button">
-                            <input type="submit" value="Claim Now" class='active-claim custom-btn btn-4 btn' />
-                        </div>
+                        <button type="submit" class="input-field button">
+                            <span class="text">SIGN UP NOW</span>
+                        </button>
                     </form>
                 </div>
 
